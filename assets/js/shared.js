@@ -168,6 +168,9 @@ function getFooterHTML() {
         <span>© 2026 Paathshala Navoday. All rights reserved.</span>
         <span><a href="${paathshalaResolveUrl('contact/contact.html?topic=privacy')}" title="Contact us about privacy">Privacy Policy</a> · <a href="${paathshalaResolveUrl('contact/contact.html?topic=terms')}" title="Contact us about terms of use">Terms of Use</a></span>
       </div>
+      <div class="footer-credit" role="complementary" aria-label="Website design credit">
+        <p class="footer-credit__text">Volunteer web build for Paathshala Navodaya by Niraj Kumar(<a href="mailto:niraj411k@gmail.com">niraj411k@gmail.com</a>). Enquiries welcome for schools &amp; nonprofits.</p>
+      </div>
     </footer>
   `;
 }
