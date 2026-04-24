@@ -256,12 +256,42 @@ footer { background: var(--dark); color: #fff; padding: 3.5rem 2rem 1.5rem; }
 }
 .social-link:hover { background: var(--red); color: #fff; }
 .footer-bottom {
-  max-width: 1200px; margin: 0 auto;
-  display: flex; justify-content: space-between; align-items: center;
-  font-size: 12px; color: rgba(255,255,255,0.4); flex-wrap: wrap; gap: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  flex-wrap: wrap;
+  gap: 8px;
 }
-.footer-bottom a { color: rgba(255,255,255,0.5); }
+.footer-bottom a { color: rgba(255, 255, 255, 0.5); }
 .footer-bottom a:hover { color: var(--orange); }
+.footer-credit {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem 0.25rem;
+  text-align: center;
+}
+.footer-credit__text {
+  font-size: clamp(11px, 1.9vw, 13px);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+  text-wrap: balance;
+}
+.footer-credit__text a {
+  color: var(--orange);
+  font-weight: 500;
+}
+.footer-credit__text a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 
 /* --- FORM ELEMENTS --- */
 .form-group { margin-bottom: 1rem; }

@@ -14,7 +14,47 @@
 
 .success-msg { display:none; background:#e8f5e9; border:1px solid #a5d6a7; border-radius:var(--radius); padding:1rem 1.25rem; color:#2e7d32; font-size:14px; margin-top:1rem; }
 
-.map-placeholder { background:var(--cream); border-radius:var(--radius-lg); height:220px; display:flex; flex-direction:column; align-items:center; justify-content:center; border:1px solid var(--cream-dk); color:var(--muted); font-size:14px; gap:8px; }
+.map-placeholder {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  min-height: 220px;
+  border: 1px solid var(--cream-dk);
+  background-color: #e8e4df;
+  background-image: url("../images/contact-map-bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.map-placeholder__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 22rem;
+  padding: 1.1rem 1.35rem;
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.93);
+  border-radius: var(--radius);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+.map-placeholder__pin { font-size: 2rem; line-height: 1; }
+.map-placeholder__title { color: var(--dark); font-size: 15px; }
+.map-placeholder__line { font-size: 13.5px; line-height: 1.45; }
+.map-placeholder__maps {
+  color: var(--red);
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+.map-placeholder__maps:hover { text-decoration: underline; }
 
 .faq-list { display:flex; flex-direction:column; gap:0; }
 .faq-item { border-bottom:1px solid var(--cream-dk); }
