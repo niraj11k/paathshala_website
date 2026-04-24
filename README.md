@@ -167,6 +167,39 @@ Traditional shared hosting works by uploading files to the folder your domain us
 
 **SSL:** Most hosts (including Hostinger) enable free HTTPS (Let’s Encrypt) from the control panel — turn it on so visitors get a secure `https://` URL.
 
+## Git and GitHub
+
+This project is a **Git** repository (default branch **`main`**). Creating the remote on GitHub must be done in your browser or with the [GitHub CLI](https://cli.github.com/) while logged in as you — that step cannot be completed automatically from here.
+
+### Create the repository on GitHub
+
+1. Sign in at [github.com](https://github.com) and click **+** → **New repository**.
+2. Set **Repository name** (for example `paathshala_website`).
+3. Choose **Public** or **Private**.
+4. Leave **Add a README** / **.gitignore** / **license** unchecked (this folder already has commits and files).
+5. Click **Create repository**.
+
+### Push this folder to GitHub
+
+In a terminal on your machine, from the project root (replace `YOUR_USER` and `YOUR_REPO` with your GitHub username and repository name):
+
+```bash
+cd /path/to/paathshala_website
+git remote add origin https://github.com/YOUR_USER/YOUR_REPO.git
+git push -u origin main
+```
+
+If GitHub shows an **HTTPS** URL with `.git`, use that exact URL in `git remote add origin`.
+
+**Authentication:** GitHub no longer accepts account passwords for `git push` over HTTPS. Use a [**Personal Access Token**](https://github.com/settings/tokens) as the password when prompted, or set up [**SSH keys**](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) and use the SSH remote instead:
+
+```bash
+git remote add origin git@github.com:YOUR_USER/YOUR_REPO.git
+git push -u origin main
+```
+
+After the first successful push, refresh the repository page on GitHub to see your files.
+
 ## Requirements
 
 - **Python 3** (for local preview only). No extra packages are required for that.
