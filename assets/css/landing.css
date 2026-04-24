@@ -1,0 +1,144 @@
+/* ── LANDING HERO ── */
+.landing-hero {
+    background: linear-gradient(135deg, var(--red-dark) 0%, var(--red) 55%, var(--orange) 100%);
+    color: #fff;
+    padding: 5rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .landing-hero::before {
+    content: ''; position: absolute; inset: 0; opacity: 0.05;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  .landing-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 420px; gap: 4rem; align-items: center;
+  }
+  .landing-headline { position: relative; }
+  .landing-badge {
+    display: inline-block; background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4); color: #fff;
+    padding: 5px 16px; border-radius: 20px; font-size: 12px;
+    font-weight: 500; letter-spacing: 0.08em; margin-bottom: 1.25rem;
+  }
+  .landing-headline h1 {
+    font-family: var(--font-head); font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700; line-height: 1.2; margin-bottom: 1.25rem;
+  }
+  .landing-headline h1 em { font-style: italic; color: #FFD9A0; }
+  .landing-headline p { font-size: 1.05rem; opacity: 0.92; margin-bottom: 2rem; line-height: 1.7; max-width: 520px; }
+  
+  .offer-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2rem; }
+  .offer-pill {
+    background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+    color: #fff; padding: 6px 14px; border-radius: 20px;
+    font-size: 13px; font-weight: 500; display: flex; align-items: center; gap: 6px;
+  }
+  
+  .trust-row { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.25); }
+  .trust-item { display: flex; align-items: center; gap: 8px; font-size: 13px; opacity: 0.9; }
+  
+  /* ── FLOATING ENROL CARD ── */
+  .enrol-card {
+    background: var(--white); border-radius: var(--radius-lg);
+    padding: 2rem; box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+    position: relative; z-index: 1;
+  }
+  .enrol-card-header {
+    text-align: center; margin-bottom: 1.5rem;
+    padding-bottom: 1rem; border-bottom: 1px solid var(--cream-dk);
+  }
+  .enrol-card-header h2 { font-family: var(--font-head); font-size: 1.3rem; color: var(--dark); margin-bottom: 4px; }
+  .enrol-card-header p  { font-size: 12.5px; color: var(--muted); }
+  .enrol-card .form-submit { margin-top: 0.5rem; font-size: 14px; }
+  .enrol-card-footer { text-align: center; margin-top: 1rem; font-size: 12px; color: var(--muted); }
+  .enrol-card-footer a { color: var(--red); }
+  
+  /* ── SOCIAL PROOF STRIP ── */
+  .proof-strip {
+    background: var(--dark); color: #fff;
+    padding: 1.75rem 2rem; text-align: center;
+  }
+  .proof-inner {
+    max-width: 900px; margin: 0 auto;
+    display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;
+  }
+  .proof-item strong { display: block; font-family: var(--font-head); font-size: 1.8rem; color: var(--orange); }
+  .proof-item span   { font-size: 12px; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.06em; }
+  
+  /* ── PROGRAM PILLS SECTION ── */
+  .prog-pills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+  .prog-pill-card {
+    background: var(--white); border-radius: var(--radius-lg);
+    padding: 1.5rem; border: 1px solid var(--cream-dk);
+    display: flex; align-items: flex-start; gap: 14px;
+    transition: all 0.2s;
+  }
+  .prog-pill-card:hover { border-color: var(--red); transform: translateY(-3px); box-shadow: var(--shadow); }
+  .prog-pill-icon {
+    width: 44px; height: 44px; border-radius: 10px;
+    background: var(--red-light); display: flex; align-items: center;
+    justify-content: center; font-size: 20px; flex-shrink: 0;
+  }
+  .prog-pill-card h3 { font-size: 14px; font-weight: 600; color: var(--dark); margin-bottom: 3px; }
+  .prog-pill-card p  { font-size: 12.5px; color: var(--muted); margin-bottom: 8px; }
+  .prog-pill-card a  { font-size: 12.5px; font-weight: 600; color: var(--red); }
+  
+  /* ── HOW IT WORKS ── */
+  .steps-row { display: flex; gap: 0; align-items: flex-start; flex-wrap: wrap; }
+  .step-block { flex: 1; min-width: 160px; text-align: center; padding: 1.5rem 1rem; position: relative; }
+  .step-block:not(:last-child)::after {
+    content: '→'; position: absolute; right: -10px; top: 2rem;
+    font-size: 1.2rem; color: var(--cream-dk);
+  }
+  .step-circle {
+    width: 52px; height: 52px; border-radius: 50%;
+    background: var(--red); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-head); font-size: 1.3rem; font-weight: 700;
+    margin: 0 auto 1rem;
+  }
+  .step-block h3 { font-size: 13.5px; font-weight: 600; color: var(--dark); margin-bottom: 4px; }
+  .step-block p  { font-size: 12.5px; color: var(--muted); }
+  
+  /* ── TESTIMONIAL FEATURE ── */
+  .testi-feature {
+    background: linear-gradient(135deg, var(--red-light), var(--orange-lt));
+    border-radius: var(--radius-lg); padding: 2.5rem; text-align: center;
+    border: 1px solid var(--cream-dk); margin-bottom: 1.5rem;
+  }
+  .testi-feature .quote { font-family: var(--font-head); font-size: 1.1rem; color: var(--dark); line-height: 1.65; font-style: italic; margin-bottom: 1.25rem; }
+  .testi-feature .author { font-size: 13px; font-weight: 600; color: var(--red); }
+  .testi-feature .role   { font-size: 12px; color: var(--muted); }
+  
+  .testi-small-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .testi-small {
+    background: var(--white); border-radius: var(--radius-lg);
+    padding: 1.25rem; border: 1px solid var(--cream-dk);
+  }
+  .testi-small p    { font-size: 13px; color: var(--mid); font-style: italic; margin-bottom: 0.75rem; line-height: 1.6; }
+  .testi-small span { font-size: 12px; font-weight: 600; color: var(--red); }
+  
+  /* ── FINAL CTA ── */
+  .final-cta {
+    background: linear-gradient(135deg, var(--red-dark), var(--red));
+    color: #fff; border-radius: var(--radius-lg); padding: 3rem;
+    text-align: center;
+  }
+  .final-cta h2 { font-family: var(--font-head); font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 0.75rem; }
+  .final-cta p  { opacity: 0.9; margin-bottom: 1.5rem; }
+  .final-cta-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .landing-inner { grid-template-columns: 1fr; }
+    .enrol-card    { max-width: 480px; }
+    .steps-row     { justify-content: center; }
+    .step-block:not(:last-child)::after { display: none; }
+    .testi-small-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .landing-hero { padding: 3.5rem 1.25rem 3rem; }
+    .trust-row    { gap: 1rem; }
+    .proof-inner  { gap: 1.5rem; }
+  }

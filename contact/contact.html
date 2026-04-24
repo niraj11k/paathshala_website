@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Paathshala Navoday</title>
+<meta name="description" content="Contact Paathshala Navoday to enroll or ask about our Hindi, Art, Drama and Cultural programs in Wellington, NZ.">
+<script>
+(function (w) {
+  var u = new URL(w.location.href);
+  var p = u.pathname.split('/').filter(Boolean);
+  if (p.length && /\.html?$/i.test(p[p.length - 1])) p.pop();
+  if (p.length) p.pop();
+  u.pathname = '/' + (p.length ? p.join('/') + '/' : '');
+  var root = u.href;
+  if (!/\/$/.test(root)) root += '/';
+  w.__PAATHSHALA_SITE_ROOT__ = root;
+})(window);
+</script>
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/contact.css">
+<link rel="icon" href="/assets/images/logo-paathshala.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body data-page="Contact Us">
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <div class="page-hero">
+      <div class="badge">We'd Love to Hear From You</div>
+      <h1>Contact Us</h1>
+      <p>Whether you're ready to enrol, have a question, or just want to find out more — reach out and we'll get back to you promptly.</p>
+    </div>
+
+    <div class="breadcrumb" aria-label="Breadcrumb">
+      <a href="#" data-root-href="index.html">Home</a><span>›</span> Contact Us
+    </div>
+
+    <!-- CONTACT MAIN -->
+    <section aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- LEFT: Details -->
+          <div>
+            <p class="section-label">Reach Us</p>
+            <h2 class="section-title" id="contact-title">Get in Touch</h2>
+            <p style="color:var(--muted);margin-bottom:1.5rem;">Have a question about enrollment, programs, or fees? We'd love to hear from you. Reach us by phone, email, or drop in during class days.</p>
+
+            <div class="contact-detail-cards">
+              <div class="contact-detail-card">
+                <div class="contact-icon" aria-hidden="true">📍</div>
+                <div>
+                  <h4>Address</h4>
+                  <p>Hanuman Temple Mandir<br>15 Ferguson Street, Newtown<br>Wellington, New Zealand</p>
+                </div>
+              </div>
+              <div class="contact-detail-card">
+                <div class="contact-icon" aria-hidden="true">📞</div>
+                <div>
+                  <h4>Phone</h4>
+                  <p><a href="tel:02102697038">02102697038</a>&nbsp; · &nbsp;<a href="tel:0212427980">021 242 7980</a></p>
+                </div>
+              </div>
+              <div class="contact-detail-card">
+                <div class="contact-icon" aria-hidden="true">📧</div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:info@paathshalanavoday.co.nz">info@paathshalanavoday.co.nz</a>
+                </div>
+              </div>
+              <div class="contact-detail-card">
+                <div class="contact-icon" aria-hidden="true">🕐</div>
+                <div>
+                  <h4>Class Days &amp; Hours</h4>
+                  <p>Tuesday 4:00–6:00 PM<br>Saturday 9:00 AM–12:00 PM<br>Sunday 10:00 AM–12:30 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- MAP PLACEHOLDER -->
+            <div class="map-placeholder" role="img" aria-label="Map location of Hanuman Temple Mandir, 15 Ferguson Street, Newtown, Wellington">
+              <span style="font-size:2rem;" aria-hidden="true">📍</span>
+              <strong style="color:var(--dark);">Hanuman Temple Mandir</strong>
+              <span>15 Ferguson Street, Newtown, Wellington</span>
+              <a href="https://maps.google.com/?q=Hanuman+Temple+Mandir+Newtown+Wellington" target="_blank" rel="noopener" style="color:var(--red);font-size:13px;font-weight:600;">Open in Google Maps →</a>
+            </div>
+          </div>
+
+          <!-- RIGHT: Form -->
+          <div>
+            <div class="contact-form-box">
+              <h2>Send Us a Message</h2>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">First name <span aria-label="required" style="color:var(--red);">*</span></label>
+                  <input type="text" id="fname" name="fname" autocomplete="given-name" required aria-required="true" placeholder="Priya">
+                </div>
+                <div class="form-group">
+                  <label for="lname">Last name <span aria-label="required" style="color:var(--red);">*</span></label>
+                  <input type="text" id="lname" name="lname" autocomplete="family-name" required aria-required="true" placeholder="Sharma">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email address <span aria-label="required" style="color:var(--red);">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" placeholder="priya@example.com">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="021 000 0000">
+              </div>
+              <div class="form-group">
+                <label for="program">Program of interest</label>
+                <select id="program" name="program">
+                  <option value="">Select a program...</option>
+                  <option value="Hindi">Hindi Language Learning</option>
+                  <option value="Art">Art &amp; Creative Expression</option>
+                  <option value="Drama">Drama &amp; Stage Confidence</option>
+                  <option value="Culture">Cultural Awareness &amp; Values</option>
+                  <option value="All">All Programs</option>
+                  <option value="Other">Just have a question</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="child-age">Child's age (if applicable)</label>
+                <input type="text" id="child-age" name="child-age" placeholder="e.g. 8 years old">
+              </div>
+              <div class="form-group">
+                <label for="message">Message <span aria-label="required" style="color:var(--red);">*</span></label>
+                <textarea id="message" name="message" required aria-required="true" placeholder="Tell us about your interest, your child's experience level, or any questions you have..."></textarea>
+              </div>
+              <div class="form-group">
+                <label style="display:flex;align-items:flex-start;gap:8px;cursor:pointer;font-weight:400;">
+                  <input type="checkbox" id="privacy" name="privacy" style="width:auto;margin-top:3px;" required aria-required="true">
+                  <span style="font-size:12.5px;color:var(--muted);">I agree to Paathshala Navoday storing my details to respond to this enquiry. We never share your information with third parties.</span>
+                </label>
+              </div>
+              <button type="button" class="form-submit" onclick="window.submitForm()" aria-label="Submit enquiry form">Send Enquiry →</button>
+              <div class="success-msg" id="success-msg" role="alert" aria-live="polite">
+                ✅ Thank you! We've received your message and will be in touch within 1–2 business days. For urgent enquiries call <a href="tel:02102697038" style="color:#2e7d32;font-weight:600;">02102697038</a>.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background:var(--cream);" aria-labelledby="faq-title">
+      <div class="container" style="max-width:800px;">
+        <div class="section-header centered">
+          <p class="section-label">Common Questions</p>
+          <h2 class="section-title" id="faq-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-q" onclick="window.toggleFaq(this)" aria-expanded="false">
+              Do I need any prior knowledge of Hindi to join? <span aria-hidden="true">＋</span>
+            </button>
+            <div class="faq-a">No prior knowledge is needed at all. We welcome complete beginners through to advanced speakers. Our teachers assess each student individually and place them in the right level.</div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-q" onclick="window.toggleFaq(this)" aria-expanded="false">
+              What age groups do you cater for? <span aria-hidden="true">＋</span>
+            </button>
+            <div class="faq-a">All ages! Our programs are open to children from age 5 upwards, teens, and adults. We have mixed-age classes and age-appropriate groupings depending on the program.</div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-q" onclick="window.toggleFaq(this)" aria-expanded="false">
+              Where are classes held? <span aria-hidden="true">＋</span>
+            </button>
+            <div class="faq-a">All classes are held at Hanuman Temple Mandir, 15 Ferguson Street, Newtown, Wellington. The venue has classroom facilities and a library for student use.</div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-q" onclick="window.toggleFaq(this)" aria-expanded="false">
+              Can my child join mid-term? <span aria-hidden="true">＋</span>
+            </button>
+            <div class="faq-a">Yes, we welcome enrolments at any time of the year, subject to class availability. Contact us and we'll find the best time for your child to start.</div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-q" onclick="window.toggleFaq(this)" aria-expanded="false">
+              Are there sibling discounts? <span aria-hidden="true">＋</span>
+            </button>
+            <div class="faq-a">Yes, we offer sibling discounts for families enrolling more than one child. Contact us directly to discuss pricing and payment options.</div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-q" onclick="window.toggleFaq(this)" aria-expanded="false">
+              What do students need to bring to class? <span aria-hidden="true">＋</span>
+            </button>
+            <div class="faq-a">For Hindi classes: a notebook and pen. For Art: we supply most materials but children may bring their own pencils. For Drama and Culture: just enthusiasm! We provide everything else.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="/assets/js/shared.js"></script>
+  <script src="/assets/js/contact.js"></script>
+</body>
+</html>

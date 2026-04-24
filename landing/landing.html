@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enrol Now — Paathshala Navoday</title>
+<meta name="description" content="Enrol at Paathshala Navoday — Wellington's Indian School of Art, Culture and Language. Hindi, Art, Drama and Cultural classes for all ages. Enrollment open now.">
+  <script>
+    (function (w) {
+      var u = new URL(w.location.href);
+      var p = u.pathname.split('/').filter(Boolean);
+      if (p.length && /\.html?$/i.test(p[p.length - 1])) p.pop();
+      if (p.length) p.pop();
+      u.pathname = '/' + (p.length ? p.join('/') + '/' : '');
+      var root = u.href;
+      if (!/\/$/.test(root)) root += '/';
+      w.__PAATHSHALA_SITE_ROOT__ = root;
+    })(window);
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/landing.css">
+  <link rel="icon" href="/assets/images/logo-paathshala.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body data-page="Enrol">
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- ── HERO + INLINE ENROL CARD ── -->
+    <section class="landing-hero" aria-labelledby="landing-title">
+      <div class="landing-inner">
+
+        <div class="landing-headline fade-up">
+          <div class="landing-badge">🎉 Enrollment Open — All Ages Welcome</div>
+          <h1>Join Wellington's<br><em>Indian School of Art,<br>Culture &amp; Language</em></h1>
+          <p>Paathshala Navoday offers Hindi Language, Art, Drama and Cultural classes for children and adults in the heart of Wellington. Spaces are limited — enrol today.</p>
+
+          <div class="offer-pills" aria-label="Programs offered">
+            <span class="offer-pill">📖 Hindi Language</span>
+            <span class="offer-pill">🎨 Art &amp; Drawing</span>
+            <span class="offer-pill">🎭 Drama &amp; Stage</span>
+            <span class="offer-pill">⭐ Cultural Awareness</span>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item">✅ All ages welcome</div>
+            <div class="trust-item">✅ No experience needed</div>
+            <div class="trust-item">✅ Certified teachers</div>
+            <div class="trust-item">✅ WCAG 2.0 accessible</div>
+          </div>
+        </div>
+
+        <!-- FLOATING ENROL CARD -->
+        <div class="enrol-card" role="form" aria-label="Quick enrollment form">
+          <div class="enrol-card-header">
+            <h2>Reserve Your Place</h2>
+            <p>Takes less than 2 minutes · We'll call you back</p>
+          </div>
+
+          <div class="form-group">
+            <label for="l-fname">Your name <span style="color:var(--red);" aria-label="required">*</span></label>
+            <input type="text" id="l-fname" name="fname" autocomplete="given-name" required aria-required="true" placeholder="Priya Sharma">
+          </div>
+          <div class="form-group">
+            <label for="l-email">Email address <span style="color:var(--red);" aria-label="required">*</span></label>
+            <input type="email" id="l-email" name="email" autocomplete="email" required aria-required="true" placeholder="priya@example.com">
+          </div>
+          <div class="form-group">
+            <label for="l-phone">Phone number <span style="color:var(--red);" aria-label="required">*</span></label>
+            <input type="tel" id="l-phone" name="phone" autocomplete="tel" required aria-required="true" placeholder="021 000 0000">
+          </div>
+          <div class="form-group">
+            <label for="l-program">Program interested in</label>
+            <select id="l-program" name="program">
+              <option value="">Select a program...</option>
+              <option value="Hindi">Hindi Language Learning</option>
+              <option value="Art">Art &amp; Creative Expression</option>
+              <option value="Drama">Drama &amp; Stage Confidence</option>
+              <option value="Culture">Cultural Awareness &amp; Values</option>
+              <option value="All">All Programs</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="l-age">Child's age (optional)</label>
+            <input type="text" id="l-age" name="age" placeholder="e.g. 8 years old">
+          </div>
+
+          <button type="button" class="form-submit" onclick="submitLanding()" aria-label="Submit enrollment enquiry">
+            Enrol Now — It's Free to Enquire →
+          </button>
+
+          <div id="l-success" style="display:none;background:#e8f5e9;border:1px solid #a5d6a7;border-radius:var(--radius);padding:1rem;color:#2e7d32;font-size:13.5px;margin-top:0.75rem;text-align:center;" role="alert" aria-live="polite">
+            ✅ Thank you! We'll be in touch within 24 hours.<br>
+            <strong>For urgent enquiries: <a href="tel:02102697038" style="color:#2e7d32;">02102697038</a></strong>
+          </div>
+
+          <div class="enrol-card-footer">
+            🔒 Your details are private. We never share them.<br>
+            Or call us: <a href="tel:02102697038">02102697038</a> · <a href="tel:0212427980">021 242 7980</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── SOCIAL PROOF ── -->
+    <div class="proof-strip" role="region" aria-label="School highlights">
+      <div class="proof-inner">
+        <div class="proof-item"><strong>4</strong><span>Programs</span></div>
+        <div class="proof-item"><strong>3</strong><span>Class Days</span></div>
+        <div class="proof-item"><strong>All Ages</strong><span>Welcome</span></div>
+        <div class="proof-item"><strong>Wellington</strong><span>NZ Based</span></div>
+        <div class="proof-item"><strong>100%</strong><span>Passionate Teachers</span></div>
+      </div>
+    </div>
+
+    <!-- ── WHAT'S INCLUDED ── -->
+    <section aria-labelledby="programs-label">
+      <div class="container">
+        <div class="section-header centered">
+          <p class="section-label">Choose Your Program</p>
+          <h2 class="section-title" id="programs-label">Four Ways to Learn &amp; Grow</h2>
+          <p class="section-sub">Every program is open to all ages. No experience needed — just enthusiasm.</p>
+        </div>
+        <div class="prog-pills-grid">
+          <div class="prog-pill-card">
+            <div class="prog-pill-icon" aria-hidden="true">📖</div>
+            <div>
+              <h3>Hindi Language Learning</h3>
+              <p>Reading, writing, speaking and listening — beginner to advanced. Certified teachers, structured curriculum.</p>
+              <a href="#" data-root-href="programs/programs.html#hindi">Learn more →</a>
+            </div>
+          </div>
+          <div class="prog-pill-card">
+            <div class="prog-pill-icon" aria-hidden="true">🎨</div>
+            <div>
+              <h3>Art &amp; Creative Expression</h3>
+              <p>Drawing, painting, rangoli and Indian craft. Ages 5+. All materials provided in class.</p>
+              <a href="#" data-root-href="programs/programs.html#art">Learn more →</a>
+            </div>
+          </div>
+          <div class="prog-pill-card">
+            <div class="prog-pill-icon" aria-hidden="true">🎭</div>
+            <div>
+              <h3>Drama &amp; Stage Confidence</h3>
+              <p>Build confidence, public speaking and teamwork. Annual end-of-year stage performance.</p>
+              <a href="#" data-root-href="programs/programs.html#drama">Learn more →</a>
+            </div>
+          </div>
+          <div class="prog-pill-card">
+            <div class="prog-pill-icon" aria-hidden="true">⭐</div>
+            <div>
+              <h3>Cultural Awareness &amp; Values</h3>
+              <p>Diwali, Holi, Indian history and traditions. Family-friendly. All ages welcome.</p>
+              <a href="#" data-root-href="programs/programs.html#culture">Learn more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOW IT WORKS ── -->
+    <section style="background:var(--cream);" aria-labelledby="how-label">
+      <div class="container">
+        <div class="section-header centered">
+          <p class="section-label">Getting Started</p>
+          <h2 class="section-title" id="how-label">How Enrollment Works</h2>
+          <p class="section-sub">Joining Paathshala Navoday is simple — just four steps and your child is in class.</p>
+        </div>
+        <div class="steps-row" role="list">
+          <div class="step-block" role="listitem">
+            <div class="step-circle" aria-hidden="true">1</div>
+            <h3>Submit your enquiry</h3>
+            <p>Fill in the form above or call us directly on 02102697038.</p>
+          </div>
+          <div class="step-block" role="listitem">
+            <div class="step-circle" aria-hidden="true">2</div>
+            <h3>We call you back</h3>
+            <p>We'll discuss the best program and level for your child within 24 hours.</p>
+          </div>
+          <div class="step-block" role="listitem">
+            <div class="step-circle" aria-hidden="true">3</div>
+            <h3>Attend orientation</h3>
+            <p>Come to a free parent orientation session at Hanuman Temple Mandir.</p>
+          </div>
+          <div class="step-block" role="listitem">
+            <div class="step-circle" aria-hidden="true">4</div>
+            <h3>Start learning!</h3>
+            <p>Your child joins their first class and becomes part of the community.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CLASS SCHEDULE ── -->
+    <section aria-labelledby="sched-label">
+      <div class="container">
+        <div class="section-header centered">
+          <p class="section-label">When We Meet</p>
+          <h2 class="section-title" id="sched-label">Class Schedule</h2>
+          <p class="section-sub">📍 Hanuman Temple Mandir · 15 Ferguson Street, Newtown, Wellington</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2rem;">
+          <div style="background:var(--white);border-radius:var(--radius-lg);padding:1.5rem;border-top:4px solid var(--red);text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+            <div style="font-family:var(--font-head);font-size:1.3rem;font-weight:700;color:var(--red);margin-bottom:6px;">Tuesday</div>
+            <div style="font-size:13px;color:var(--muted);">4:00 PM – 6:00 PM</div>
+            <span class="tag orange" style="margin-top:10px;display:inline-block;">Hindi &amp; Culture</span>
+          </div>
+          <div style="background:var(--white);border-radius:var(--radius-lg);padding:1.5rem;border-top:4px solid var(--red);text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+            <div style="font-family:var(--font-head);font-size:1.3rem;font-weight:700;color:var(--red);margin-bottom:6px;">Saturday</div>
+            <div style="font-size:13px;color:var(--muted);">9:00 AM – 12:00 PM</div>
+            <span class="tag orange" style="margin-top:10px;display:inline-block;">Art &amp; Drama</span>
+          </div>
+          <div style="background:var(--white);border-radius:var(--radius-lg);padding:1.5rem;border-top:4px solid var(--red);text-align:center;box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+            <div style="font-family:var(--font-head);font-size:1.3rem;font-weight:700;color:var(--red);margin-bottom:6px;">Sunday</div>
+            <div style="font-size:13px;color:var(--muted);">10:00 AM – 12:30 PM</div>
+            <span class="tag orange" style="margin-top:10px;display:inline-block;">All Programs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIALS ── -->
+    <section style="background:var(--cream);" aria-labelledby="testi-label">
+      <div class="container">
+        <div class="section-header centered">
+          <p class="section-label">What Families Say</p>
+          <h2 class="section-title" id="testi-label">Loved by Wellington Families</h2>
+        </div>
+        <div class="testi-feature" role="blockquote">
+          <div class="quote">"Our children have blossomed since joining Paathshala Navoday. The teachers are dedicated, the classes are engaging, and our family has found a wonderful community. We've seen incredible progress in Hindi reading and writing in just one term."</div>
+          <div class="author">Priya Sharma</div>
+          <div class="role">Parent · Wellington · Hindi &amp; Cultural Programs</div>
+        </div>
+        <div class="testi-small-grid">
+          <div class="testi-small">
+            <p>"So much more than a language class. My daughter now loves Indian art and performs confidently on stage. Incredible."</p>
+            <span>Rahul Mehta · Lower Hutt</span>
+          </div>
+          <div class="testi-small">
+            <p>"The drama program gave my son incredible confidence. Watching him on stage at the end-of-year showcase was unforgettable."</p>
+            <span>Anita Patel · Wellington</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FINAL CTA ── -->
+    <section aria-labelledby="cta-label">
+      <div class="container">
+        <div class="final-cta" role="region" aria-label="Final enrollment call to action">
+          <h2 id="cta-label">Ready to Join Paathshala Navoday?</h2>
+          <p>Enrollment is open right now for all ages and all programs. Spaces are limited — don't miss this term.</p>
+          <div class="final-cta-actions">
+            <a href="#main-content" class="btn-white" onclick="document.getElementById('l-fname').focus();return false;">Fill In the Form Above</a>
+            <a href="tel:02102697038" class="btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.7);">Call: 02102697038</a>
+            <a href="#" data-root-href="contact/contact.html" class="btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.7);">Full Contact Page</a>
+          </div>
+          <p style="margin-top:1.5rem;font-size:13px;opacity:0.75;">📍 Hanuman Temple Mandir · 15 Ferguson Street · Newtown · Wellington</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="/assets/js/shared.js"></script>
+  <script src="/assets/js/landing.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Git and editor noise
+.git
+.gitignore
+**/.DS_Store
+
+# Docker / docs — not needed inside the image web root
+Dockerfile
+docker-compose.yml
+.dockerignore
+README.md
